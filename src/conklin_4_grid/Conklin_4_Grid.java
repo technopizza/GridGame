@@ -122,14 +122,14 @@ import java.util.Scanner;
         for(int i = 0; i < t.length; i++){
             int[] treasureCoord = getRandomCoordinate(g);
             
-            for(int b =0; b < traps.length; b++){
-                int[] trapCoord = new int[2];
-                trapCoord[0] = traps[b].getPositionX();
-                trapCoord[1] = traps[b].getPositionY();
-                if(treasureCoord.equals(trapCoord)){
-                    i++;
-                }
-            }
+//            for(int b =0; b < traps.length; b++){
+//                int[] trapCoord = new int[2];
+//                trapCoord[0] = traps[b].getPositionX();
+//                trapCoord[1] = traps[b].getPositionY();
+//                if(treasureCoord.equals(trapCoord)){
+//                    i++;
+//                }
+//            }
             
             t[i] = new Treasure(Treasure.characterGlobal, treasureCoord[0], treasureCoord[1]);
             g.setCharAt(t[i].getPositionX(), t[i].getPositionY(), t[i].getCharacter());
